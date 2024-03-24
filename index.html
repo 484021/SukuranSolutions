@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Sukuran - Mississauga's Web Designer and Developer</title>
+  </head>
+  <body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+      <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" aria-label="back to home">
+          <img
+            src="./assets/Sukuran.png"
+            alt="logo"
+            width="210"
+            height="29"
+            aria-hidden="true"
+            decoding="async"
+          />
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+          <!--Mobile Nav Toggle-->
+          <button class="cs-toggle" aria-label="mobile menu toggle">
+            <div class="cs-box" aria-hidden="true">
+              <span class="cs-line cs-line1" aria-hidden="true"></span>
+              <span class="cs-line cs-line2" aria-hidden="true"></span>
+              <span class="cs-line cs-line3" aria-hidden="true"></span>
+            </div>
+          </button>
+          <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+          <div class="cs-ul-wrapper">
+            <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+              <li class="cs-li">
+                <a href="" class="cs-li-link cs-active"> Home </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> About </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> Services </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> About Us </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> FAQ </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+          <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+          <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+      </button> -->
+      </div>
+    </header>
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero-1785">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper"
+            >Mississauga's Web Designer and Developer</span
+          >
+          <h1 class="cs-title">Design. Develop. Deliver.</h1>
+          <p class="cs-text">
+            Hey Mississauga! Ready to Stand Out Online? Let's Elevate Your
+            Online Presence with sukuran. We specialize in web design and
+            development, tailored just for you. Let's craft something awesome
+            together for your business!
+          </p>
+          <div class="cs-button-group">
+            <a href="" class="cs-button-solid cs-button1">Get Started!</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Background Image -->
+      <picture class="cs-background">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://images.unsplash.com/photo-1467806757054-808649965a76?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://images.unsplash.com/photo-1467806757054-808649965a76?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://images.unsplash.com/photo-1467806757054-808649965a76?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="field"
+          width="1920"
+          height="1200"
+          aria-hidden="true"
+        />
+      </picture>
+
+      <img
+        class="cs-graphic"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-shape.png"
+        alt="graphic"
+        height="161"
+        width="1920"
+        loading="lazy"
+        decoding="async"
+      />
+      <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
+      <img
+        class="cs-graphic cs-graphic-dark"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-shape-dark.png"
+        alt="graphic"
+        height="161"
+        width="1920"
+        loading="lazy"
+        decoding="async"
+      />
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Why Choose Us                 -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-1634">
+      <div class="cs-container">
+        <div class="cs-content">
+          <div class="cs-flex">
+            <span class="cs-topper">Why Choose Us</span>
+            <h2 class="cs-title">Get A Personal Touch With Us</h2>
+          </div>
+          <p class="cs-text">
+            Curious about our personal touch? We're a tight-knit team, so you'll
+            get to know us well. Expect tailored attention that caters to your
+            business needs, ensuring your project feels like a collaboration,
+            not just a service. Let's chat!
+          </p>
+        </div>
+        <div class="cs-wrapper">
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <picture class="cs-icon-wrapper">
+                <img
+                  class="cs-icon"
+                  src="gift-svgrepo-com.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="32"
+                  height="32"
+                  aria-hidden="true"
+                />
+              </picture>
+              <!-- Text Grouped For Flexbox-->
+              <div class="cs-text-group">
+                <h3 class="cs-h3">Personalized Service</h3>
+                <p class="cs-item-text">
+                  As a small team, we offer attentive, personalized customer
+                  care, ensuring your unique needs are met with precision and
+                  care.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <picture class="cs-icon-wrapper">
+                <img
+                  class="cs-icon"
+                  src="checkmark-xs-svgrepo-com.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="32"
+                  height="32"
+                  aria-hidden="true"
+                />
+              </picture>
+              <!-- Text Grouped For Flexbox-->
+              <div class="cs-text-group">
+                <h3 class="cs-h3">Satisfaction Guarantee</h3>
+                <p class="cs-item-text">
+                  Your peace of mind matters. We back our services with a
+                  money-back guarantee, demonstrating our commitment to your
+                  satisfaction.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <picture class="cs-icon-wrapper">
+                <img
+                  class="cs-icon"
+                  src="code-svgrepo-com.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="32"
+                  height="32"
+                  aria-hidden="true"
+                />
+              </picture>
+              <!-- Text Grouped For Flexbox-->
+              <div class="cs-text-group">
+                <h3 class="cs-h3">Strategic Branding</h3>
+                <p class="cs-item-text">
+                  We specialize in strategic branding that resonates with your
+                  audience, increasing brand trust and driving more leads and
+                  sales. Let's create a brand that not only looks good but also
+                  converts!
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="cs-image-group">
+            <div class="cs-picture-wrapper">
+              <picture class="cs-picture cs-picture1">
+                <!--Mobile Image-->
+                <source
+                  media="(max-width: 600px)"
+                  srcset="
+                    https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                  "
+                />
+                <!--Tablet and above Image-->
+                <source
+                  media="(min-width: 601px)"
+                  srcset="
+                    https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                  "
+                />
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="meeting"
+                  width="434"
+                  height="414"
+                />
+              </picture>
+              <!-- <div class="cs-box">
+                <span class="cs-header">Attorney Growth</span>
+                <span class="cs-desc">Aqestic recusandae lauda </span>
+              </div> -->
+            </div>
+            <picture class="cs-picture cs-picture2">
+              <!--Mobile Image-->
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                "
+              />
+              <!--Tablet and above Image-->
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                "
+              />
+              <img
+                loading="lazy"
+                decoding="async"
+                src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="on computer"
+                width="197"
+                height="197"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                     CTA                      -->
+    <!-- ============================================ -->
+
+    <section id="cta-1394">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Subscribe</span>
+          <h2 class="cs-title">
+            Subscribe to get your Free Web Analytics E-Book
+          </h2>
+          <p class="cs-text">
+            Subscribe to our newsletter and learn how to increase your online
+            presence, web design tips and more.
+          </p>
+          <form class="cs-form" name="Contact Form" method="post">
+            <input
+              class="cs-input"
+              type="email"
+              id="cs-email-1394"
+              name="find-us"
+              placeholder="Email Address"
+            />
+            <button class="cs-button-solid cs-submit" type="submit">
+              Subscribe Now
+            </button>
+          </form>
+        </div>
+      </div>
+      <!--Background Image-->
+      <picture class="cs-background">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://images.unsplash.com/photo-1601919771683-42d5b6e258e6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://images.unsplash.com/photo-1601919771683-42d5b6e258e6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://images.unsplash.com/photo-1601919771683-42d5b6e258e6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="meeting"
+          width="1920"
+          height="486"
+          aria-hidden="true"
+        />
+      </picture>
+    </section>
+    <!-- ============================================ -->
+    <!--                    Services                  -->
+    <!-- ============================================ -->
+
+    <section id="services-1354">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Our Services</span>
+          <h2 class="cs-title">
+            We’re Committed to Deliver Personalized High Quality Services In
+            Mississauga
+          </h2>
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <a href="" class="cs-link">
+              <h3 class="cs-h3">
+                <span class="cs-span">Website Design and Development</span>
+              </h3>
+            </a>
+            <picture class="cs-background">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                "
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                "
+              />
+              <img
+                decoding="async"
+                src="https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="construction"
+                width="305"
+                height="305"
+                aria-hidden="true"
+              />
+            </picture>
+          </li>
+          <li class="cs-item">
+            <a href="" class="cs-link">
+              <h3 class="cs-h3">
+                <span class="cs-span">Website Maintenance and Support</span>
+              </h3>
+            </a>
+            <picture class="cs-background">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                "
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                "
+              />
+              <img
+                decoding="async"
+                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="construction"
+                width="305"
+                height="305"
+                aria-hidden="true"
+              />
+            </picture>
+          </li>
+          <li class="cs-item">
+            <a href="" class="cs-link">
+              <h3 class="cs-h3">
+                <span class="cs-span">Search Engine Optimization (SEO)</span>
+              </h3>
+            </a>
+            <picture class="cs-background">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=2151&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                "
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=2151&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                "
+              />
+              <img
+                decoding="async"
+                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=2151&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="construction"
+                width="305"
+                height="305"
+                aria-hidden="true"
+              />
+            </picture>
+          </li>
+          <li class="cs-item">
+            <a href="" class="cs-link">
+              <h3 class="cs-h3">
+                <span class="cs-span">Social Media Marketing</span>
+              </h3>
+            </a>
+            <picture class="cs-background">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://images.unsplash.com/photo-1603145733146-ae562a55031e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                "
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://images.unsplash.com/photo-1603145733146-ae562a55031e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                "
+              />
+              <img
+                decoding="async"
+                src="https://images.unsplash.com/photo-1603145733146-ae562a55031e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="construction"
+                width="305"
+                height="305"
+                aria-hidden="true"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery-46">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Our Portfolio</span>
+          <h2 class="cs-title">
+            Welcome to our showcase of finely crafted landing pages and web apps
+          </h2>
+          <p class="cs-text">
+            Explore a range of projects, from sleek 5-page websites to engaging
+            landing pages, each meticulously designed to resonate with the brand
+            and drive conversions. Whether it's an artist's portfolio or an
+            e-commerce website, we work closely with our clients, focusing on
+            call-to-actions and user interactions to achieve more conversions.
+          </p>
+        </div>
+        <div class="cs-image-group">
+          <!-- Image 1 -->
+          <div class="cs-item cs-item-1">
+            <picture class="cs-picture">
+              <source media="(max-width: 600px)" srcset="assets/ltb.png" />
+              <source media="(min-width: 601px)" srcset="assets/ltb.png" />
+              <img
+                loading="lazy"
+                decoding="async"
+                src="assets/ltb.png"
+                alt="man grinding steel"
+                width="529"
+                height="256"
+              />
+            </picture>
+            <!-- Hover Box -->
+            <div class="cs-hover-box">
+              <h3 class="cs-heading3">Love The Beads</h3>
+              <span class="cs-subtitle"
+                >An E-commerce app for a GTA based hand-made jewellery
+                shop</span
+              >
+              <a
+                class="cs-link"
+                aria-label="read more about this project"
+                href="https://love-the-beads.vercel.app/"
+                target="_blank"
+              >
+                <!-- SVG Arrow-->
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z"
+                    fill="white"
+                  />
+                </svg>
+                View demo
+              </a>
+            </div>
+          </div>
+          <!-- Image 2 -->
+          <div class="cs-item cs-item-2">
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="assets\betterphotos.png"
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="assets\betterphotos.png"
+              />
+              <img
+                loading="lazy"
+                decoding="async"
+                src="assets\betterphotos.png"
+                alt="website"
+                width="255"
+                height="255"
+              />
+            </picture>
+            <!-- Hover Box -->
+            <div class="cs-hover-box">
+              <h3 class="cs-heading3">Better Photos</h3>
+              <span class="cs-subtitle"
+                >Photographer community: rate, share, elevate skills, connect
+                with enthusiasts
+              </span>
+              <a
+                class="cs-link"
+                aria-label="read more about this project"
+                href="https://betterphotos.pages.dev/?#"
+                target="_blank"
+              >
+                <!-- SVG Arrow-->
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z"
+                    fill="white"
+                  />
+                </svg>
+                View demo
+              </a>
+            </div>
+          </div>
+          <!-- Image 3 -->
+          <div class="cs-item cs-item-3">
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="assets\corpcomment.png"
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="assets\corpcomment.png"
+              />
+              <img
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="assets\corpcomment.png"
+                alt="steel rebar grid"
+                width="255"
+                height="255"
+              />
+            </picture>
+            <!-- Hover Box -->
+            <div class="cs-hover-box">
+              <h3 class="cs-heading3">Corp Comment</h3>
+              <span class="cs-subtitle"
+                >An app where customers can leave comments about their favorite
+                companies</span
+              >
+              <a
+                class="cs-link"
+                aria-label="read more about this project"
+                href="https://484021.github.io/CorpComment/"
+                target="blank"
+              >
+                <!-- SVG Arrow-->
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z"
+                    fill="white"
+                  />
+                </svg>
+                View demo
+              </a>
+            </div>
+          </div>
+          <!-- Image 4 -->
+          <div class="cs-item cs-item-4">
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="assets\wordanalytics.png"
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="assets\wordanalytics.png"
+              />
+              <img
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="assets\wordanalytics.png"
+                alt="modern home"
+                width="255"
+                height="255"
+              />
+            </picture>
+            <!-- Hover Box -->
+            <div class="cs-hover-box">
+              <h3 class="cs-heading3">Word Analytics</h3>
+              <span class="cs-subtitle">
+                Unleash the power of data-driven content strategy, analyzing
+                word usage, frequency, and impact</span
+              >
+              <a
+                class="cs-link"
+                aria-label="read more about this project"
+                href="https://484021.github.io/WordAnalytics/"
+                target="_blank"
+              >
+                <!-- SVG Arrow-->
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z"
+                    fill="white"
+                  />
+                </svg>
+                View demo
+              </a>
+            </div>
+          </div>
+          <!-- Image 5 -->
+          <div class="cs-item cs-item-5">
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                assets\social editor.png
+                "
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                assets\social editor.png
+                "
+              />
+              <img
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="assets\social editor.png"
+                alt="appliance"
+                width="255"
+                height="255"
+              />
+            </picture>
+            <!-- Hover Box -->
+            <div class="cs-hover-box">
+              <h3 class="cs-heading3">Social Editor</h3>
+              <span class="cs-subtitle"
+                >A landing page for a Social Media Photo Editor App</span
+              >
+              <a
+                class="cs-link"
+                aria-label="read more about this project"
+                href="https://484021.github.io/Social-Editor/"
+                target="_blank"
+              >
+                <!-- SVG Arrow-->
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z"
+                    fill="white"
+                  />
+                </svg>
+                View demo
+              </a>
+            </div>
+          </div>
+          <!-- Image 6 -->
+          <div class="cs-item cs-item-6">
+            <picture class="cs-picture">
+              <source media="(max-width: 600px)" srcset="assets\rmtdev.png" />
+              <source media="(min-width: 601px)" srcset="assets\rmtdev.png" />
+              <img
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="assets\rmtdev.png"
+                alt="modern home"
+                width="255"
+                height="530"
+              />
+            </picture>
+            <!-- Hover Box -->
+            <div class="cs-hover-box">
+              <h3 class="cs-heading3">rmtDev</h3>
+              <span class="cs-subtitle"
+                >A Job Board for developers looking for remote work</span
+              >
+              <a
+                class="cs-link"
+                aria-label="read more about this project"
+                href="https://rmt-dev-three.vercel.app/"
+                target="_blank"
+              >
+                <!-- SVG Arrow-->
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z"
+                    fill="white"
+                  />
+                </svg>
+                View demo
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="" class="cs-button-solid">Start Your Project</a>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!--                   Steps                      -->
+    <!-- ============================================ -->
+
+    <section id="steps-1173">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Our Work Process</span>
+          <h2 class="cs-title">How To Get Started</h2>
+          <p class="cs-text">
+            Ready to elevate your online presence in Mississauga? Contact us now
+            to start crafting your website today. Let's bring your vision to
+            life!
+          </p>
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <img
+                class="cs-icon"
+                src="./assets/contact-classic-telephone-svgrepo-com.svg"
+                alt="icon"
+                width="40"
+                height="40"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+              />
+            </picture>
+            <h3 class="cs-h3">Contact us</h3>
+            <p class="cs-item-text">
+              When you reach out to us we will talk about your vision and decide
+              on how we will move forward with the project.
+            </p>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <img
+                class="cs-icon"
+                src="./assets/pay-svgrepo-com.svg"
+                alt="icon"
+                width="40"
+                height="40"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+              />
+            </picture>
+            <h3 class="cs-h3">Seal the deal</h3>
+            <p class="cs-item-text">
+              After discussing the details of the project, you will receive an
+              agreement to sign and pay a 50% deposit to get the project started
+              to your specifications.
+            </p>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <img
+                class="cs-icon"
+                src="./assets/receive-svgrepo-com.svg"
+                alt="icon"
+                width="40"
+                height="40"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+              />
+            </picture>
+            <h3 class="cs-h3">Get Online!</h3>
+            <p class="cs-item-text">
+              At this stage you will check the project for any revisions to be
+              requested and get your website online for everyone to see.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <!--Tire Screech-->
+      <img
+        class="cs-graphic"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/tire-mark.svg"
+        alt="icon"
+        width="840"
+        height="357"
+        loading="lazy"
+        decoding="async"
+        aria-hidden="true"
+      />
+    </section>
+    <!-- ============================================ -->
+    <!--                  Pricing                     -->
+    <!-- ============================================ -->
+
+    <section id="pricing-357">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Pricing</span>
+          <h2 class="cs-title">It’s Easy to Get Started</h2>
+          <p class="cs-text">
+            At Stitch Cleaning Service, let us help you solve problems so that
+            you can focus on your mission. We support businesses through periods
+            of expansion, succession.
+          </p>
+        </div>
+        <ul class="cs-card-group">
+          <!-- Option 1 -->
+          <li class="cs-item">
+            <h3 class="cs-h3">Starter</h3>
+            <p class="cs-item-text">Perfect to get started.</p>
+            <div class="cs-option-group">
+              <span class="cs-price"
+                >$39<span class="cs-small">/month</span></span
+              >
+            </div>
+            <span class="cs-included">Package Includes</span>
+            <ul class="cs-ul">
+              <li class="cs-li">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                All available starter feature
+              </li>
+              <li class="cs-li">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                Home service 24/7
+              </li>
+              <li class="cs-li cs-disabled">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                Customer agent service
+              </li>
+              <li class="cs-li cs-disabled">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                Professional cleaner
+              </li>
+              <li class="cs-li cs-disabled">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                2 bed room cleaning
+              </li>
+              <li class="cs-li cs-disabled">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                2 bed, living room cleaning
+              </li>
+            </ul>
+            <a href="/basic.html" class="cs-button-solid">Get Started</a>
+          </li>
+          <!-- Option 2 -->
+          <li class="cs-item cs-popular">
+            <h3 class="cs-h3">Starter</h3>
+            <p class="cs-item-text">Perfect to get started.</p>
+            <div class="cs-option-group">
+              <span class="cs-price"
+                >$69<span class="cs-small">/month</span></span
+              >
+            </div>
+            <span class="cs-included">Package Includes</span>
+            <ul class="cs-ul">
+              <li class="cs-li">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                All available starter feature
+              </li>
+              <li class="cs-li">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                Home service 24/7
+              </li>
+              <li class="cs-li">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                Customer agent service
+              </li>
+              <li class="cs-li">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                Professional cleaner
+              </li>
+              <li class="cs-li cs-disabled">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                2 bed room cleaning
+              </li>
+              <li class="cs-li cs-disabled">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                2 bed, living room cleaning
+              </li>
+            </ul>
+            <a href="/basic.html" class="cs-button-solid">Get Started</a>
+          </li>
+          <!-- Option 3 -->
+          <li class="cs-item">
+            <h3 class="cs-h3">Starter</h3>
+            <p class="cs-item-text">Perfect to get started.</p>
+            <div class="cs-option-group">
+              <span class="cs-price"
+                >$99<span class="cs-small">/month</span></span
+              >
+            </div>
+            <span class="cs-included">Package Includes</span>
+            <ul class="cs-ul">
+              <li class="cs-li">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                All available starter feature
+              </li>
+              <li class="cs-li">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                Home service 24/7
+              </li>
+              <li class="cs-li">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                Customer agent service
+              </li>
+              <li class="cs-li">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                Professional cleaner
+              </li>
+              <li class="cs-li">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                2 bed room cleaning
+              </li>
+              <li class="cs-li">
+                <img
+                  class="cs-li-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg"
+                  alt="code stitch icon"
+                  width="20"
+                  height="20"
+                />
+                2 bed, living room cleaning
+              </li>
+            </ul>
+            <a href="/basic.html" class="cs-button-solid">Get Started</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!--                    FAQ                       -->
+    <!-- ============================================ -->
+
+    <section id="faq-1741">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Frequently Asked Questions</span>
+          <h2 class="cs-title">A Healthy Mind in a Healthy Body</h2>
+          <a class="cs-button-solid"> Ask Another Questions </a>
+        </div>
+        <div class="cs-flex-group">
+          <ul class="cs-faq-group">
+            <!-- Active class added as default -->
+            <li class="cs-faq-item active">
+              <button class="cs-button">
+                <span class="cs-button-text"> How do I place an order? </span>
+              </button>
+              <p class="cs-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                convallis nunc neque, bibendum pulvinar vitae commodo velit.
+                Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum
+                porta enim, magna urna, quam.
+              </p>
+            </li>
+            <li class="cs-faq-item">
+              <button class="cs-button">
+                <span class="cs-button-text">
+                  What payment methods do you accept?
+                </span>
+              </button>
+              <p class="cs-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                convallis nunc neque, bibendum pulvinar vitae commodo velit.
+                Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum
+                porta enim, magna urna, quam.
+              </p>
+            </li>
+            <li class="cs-faq-item">
+              <button class="cs-button">
+                <span class="cs-button-text"> How can I track my order? </span>
+              </button>
+              <p class="cs-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                convallis nunc neque, bibendum pulvinar vitae commodo velit.
+                Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum
+                porta enim, magna urna, quam.
+              </p>
+            </li>
+            <li class="cs-faq-item">
+              <button class="cs-button">
+                <span class="cs-button-text">
+                  What is your return policy?
+                </span>
+              </button>
+              <p class="cs-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                convallis nunc neque, bibendum pulvinar vitae commodo velit.
+                Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum
+                porta enim, magna urna, quam.
+              </p>
+            </li>
+            <li class="cs-faq-item">
+              <button class="cs-button">
+                <span class="cs-button-text">
+                  Do you offer international shipping?
+                </span>
+              </button>
+              <p class="cs-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                convallis nunc neque, bibendum pulvinar vitae commodo velit.
+                Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum
+                porta enim, magna urna, quam.
+              </p>
+            </li>
+            <li class="cs-faq-item">
+              <button class="cs-button">
+                <span class="cs-button-text">
+                  How can I contact customer support?
+                </span>
+              </button>
+              <p class="cs-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                convallis nunc neque, bibendum pulvinar vitae commodo velit.
+                Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum
+                porta enim, magna urna, quam.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cs-gallery">
+        <!--Picture 1-->
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-1.png
+            "
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-1.png
+            "
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-1.png"
+            alt="gallery"
+            width="272"
+            height="320"
+          />
+        </picture>
+        <!--Picture 2-->
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-2.png
+            "
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-2.png
+            "
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-2.png"
+            alt="gallery"
+            width="272"
+            height="320"
+          />
+        </picture>
+        <!--Picture 3-->
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-3.png
+            "
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-3.png
+            "
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-3.png"
+            alt="gallery"
+            width="272"
+            height="320"
+          />
+        </picture>
+        <!--Picture 4-->
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-4.png
+            "
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-4.png
+            "
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-4.png"
+            alt="gallery"
+            width="272"
+            height="320"
+          />
+        </picture>
+        <!--Picture 5-->
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-5.png
+            "
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-5.png
+            "
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-5.png"
+            alt="gallery"
+            width="272"
+            height="320"
+          />
+        </picture>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Reviews                    -->
+    <!-- ============================================ -->
+
+    <section id="reviews-1395">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Testimonials</span>
+          <h2 class="cs-title">Happy Client’s Feedback About Our Service</h2>
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <!--Blue Quote-->
+            <img
+              class="cs-quote"
+              aria-hidden="true"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pink-quotes.svg"
+              decoding="async"
+              alt="quote icon"
+              width="120"
+              height="99"
+            />
+            <p class="cs-item-text">
+              Small businesses are the heartbeat of communities, embodying the
+              spirit of entrepreneurship, determination, and local support.
+            </p>
+            <div class="cs-flex-group">
+              <picture class="cs-picture">
+                <img
+                  class="cs-profile"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg"
+                  decoding="async"
+                  alt="profile"
+                  width="50"
+                  height="50"
+                  aria-hidden="true"
+                />
+              </picture>
+              <span class="cs-name">
+                Britney Allison
+                <span class="cs-job">Founder Of Yokoloko</span>
+              </span>
+            </div>
+          </li>
+          <li class="cs-item">
+            <!--Blue Quote-->
+            <img
+              class="cs-quote"
+              aria-hidden="true"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pink-quotes.svg"
+              decoding="async"
+              alt="quote icon"
+              width="120"
+              height="99"
+            />
+            <p class="cs-item-text">
+              I want to say a huge thank you to the Stitch team. The guys in a
+              short time and very efficiently helped me with the development of
+              a website for my new startup.
+            </p>
+            <div class="cs-flex-group">
+              <picture class="cs-picture">
+                <img
+                  class="cs-profile"
+                  src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile3.png"
+                  decoding="async"
+                  alt="profile"
+                  width="50"
+                  height="50"
+                  aria-hidden="true"
+                />
+              </picture>
+              <span class="cs-name">
+                Jessica Jonson
+                <span class="cs-job">CTO Of Meriette</span>
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!--                   Contact                    -->
+    <!-- ============================================ -->
+
+    <section id="contact-569">
+      <div class="cs-container">
+        <div class="cs-left">
+          <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Request A Quote</h2>
+            <p class="cs-text">
+              Pellentesque sit amet porttitor eget dolor morbi non arcu. Vitae
+              justo eget magna fermentum iaculis eu non
+            </p>
+          </div>
+          <!--Form-->
+          <form
+            class="cs-form"
+            id="cs-form-569"
+            name="Contact Form"
+            method="post"
+          >
+            <label class="cs-label">
+              Name
+              <input
+                class="cs-input"
+                required
+                type="text"
+                id="name-569"
+                name="name"
+                placeholder="Name"
+              />
+            </label>
+            <label class="cs-label">
+              Phone
+              <input
+                class="cs-input"
+                required
+                type="text"
+                id="phone-569"
+                name="phone"
+                placeholder="Phone"
+              />
+            </label>
+            <label class="cs-label">
+              Email
+              <input
+                class="cs-input"
+                required
+                type="text"
+                id="email-569"
+                name="email"
+                placeholder="Email"
+              />
+            </label>
+            <label class="cs-label">
+              How did you hear about us?
+              <input
+                class="cs-input"
+                required
+                type="text"
+                id="hear-569"
+                name="heat"
+                placeholder="How did you hear about us?"
+              />
+            </label>
+            <label class="cs-label cs-message">
+              Message
+              <textarea
+                class="cs-input cs-textarea"
+                required
+                name="Message"
+                id="message-569"
+                placeholder="Write message..."
+              ></textarea>
+            </label>
+            <button class="cs-submit" type="submit">Send Now</button>
+          </form>
+        </div>
+        <div class="cs-right">
+          <!--Address-->
+          <div class="cs-flex">
+            <span class="cs-header">Our Location</span>
+            <a href="" class="cs-link"
+              >123 Fake Mill Creek<br />
+              Bark, USA 98082</a
+            >
+          </div>
+          <!--Contacts-->
+          <div class="cs-flex">
+            <span class="cs-header">Quick Contacts</span>
+            <a href="" class="cs-link">info@email.com</a>
+            <a href="tel:555-689-9566" class="cs-link cs-phone"
+              >+1 (555) 686-9566</a
+            >
+          </div>
+          <!--Social-->
+          <ul class="cs-social">
+            <li class="cs-li">
+              <a class="cs-social-link" href="" aria-label="visit twitter">
+                <img
+                  class="cs-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/twitter-gold.svg"
+                  alt="icon"
+                  width="18"
+                  height="15"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+            <li class="cs-li">
+              <a class="cs-social-link" href="" aria-label="visit facebook">
+                <img
+                  class="cs-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/facebook-gold.svg"
+                  alt="icon"
+                  width="10"
+                  height="15"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+            <li class="cs-li">
+              <a class="cs-social-link" href="" aria-label="visit linkedin">
+                <img
+                  class="cs-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/linkedin-gold.svg"
+                  alt="icon"
+                  width="16"
+                  height="15"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+            <li class="cs-li">
+              <a class="cs-social-link" href="" aria-label="visit youtube">
+                <img
+                  class="cs-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/youtube-gold.svg"
+                  alt="icon"
+                  width="21"
+                  height="15"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-1292">
+      <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+          <a aria-label="go back to home" class="cs-logo" href="">
+            <img
+              class="cs-logo-img"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Footer/logo.svg"
+              alt="logo"
+              width="240"
+              height="32"
+            />
+          </a>
+          <p class="cs-text">
+            We planning, designing, financing, and executing projects.
+          </p>
+          <a href="mailto:info@mail.com" class="cs-link">
+            <img
+              class="cs-link-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/construction-mail.svg"
+              alt="icon"
+              width="24"
+              height="24"
+            />
+            hi@stitchconstruction.com
+          </a>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">Services</span>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="">Email Marketing</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="">Brandings</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="">Campaign</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="">Offline</a>
+          </li>
+        </ul>
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">About</span>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="">Our Story</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="">Benefits</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="">Team</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="">Career</a>
+          </li>
+        </ul>
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">Contact</span>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="">Facebook</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="">Instagram</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="">LinkedIn</a>
+          </li>
+        </ul>
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">Help</span>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="">FAQ</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="cs-bottom">
+        <span class="cs-copyright"
+          >Copyright© 2023.
+          <a class="cs-copyright-link" href="">Stitch Construction.</a>
+          All Right Reserved.
+        </span>
+        <a href="" class="cs-copyright-link">Terms of Service</a>
+        <a href="" class="cs-copyright-link">Privacy Policy</a>
+      </div>
+      <!--Floating Cirlces-->
+      <div class="cs-floater" aria-hidden="true"></div>
+    </footer>
+  </body>
+</html>
