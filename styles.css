@@ -14,6 +14,7 @@
   --bodyFontSize: 1rem;
   /* 60px - 100px top and bottom */
   --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1522,6 +1523,7 @@ body::-webkit-scrollbar {
   }
   #pricing-357 .cs-button-solid:hover:before {
     width: 100%;
+    background: #000;
   }
   #pricing-357 .cs-button-solid {
     /* cs-button-solid override */
@@ -1606,6 +1608,7 @@ body::-webkit-scrollbar {
     display: inline-block;
     position: relative;
     z-index: 1;
+    border-radius: 5px;
   }
   #faq-1741 .cs-button-solid:before {
     content: "";
@@ -1749,6 +1752,8 @@ body::-webkit-scrollbar {
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 5px;
+    box-shadow: 2.6px 5.3px 5.3px hsl(0deg 0% 0% / 0.42);
   }
 }
 /* Tablet - 768px */
@@ -2179,6 +2184,7 @@ body::-webkit-scrollbar {
     overflow: hidden;
     position: relative;
     display: block;
+    object-fit: cover;
   }
   #reviews-1395 .cs-profile img {
     position: absolute;
@@ -2288,6 +2294,7 @@ body::-webkit-scrollbar {
     /* prevents padding from adding to height and width */
     box-sizing: border-box;
     transition: border-color 0.3s;
+    border-radius: 5px;
   }
   #contact-569 .cs-input:hover {
     border-color: var(--secondary);
@@ -2306,6 +2313,8 @@ body::-webkit-scrollbar {
     padding-top: 1.5rem;
     margin-bottom: 0.75rem;
     font-family: inherit;
+
+    resize: none;
   }
   #contact-569 .cs-submit {
     /* 20px - 25px */
@@ -2316,7 +2325,7 @@ body::-webkit-scrollbar {
     font-weight: 700;
     text-align: center;
     margin: 0;
-    color: #1a1a1a;
+    color: white;
     border: none;
     width: 100%;
     padding: 0 1.5rem;
@@ -2324,6 +2333,8 @@ body::-webkit-scrollbar {
     display: inline-block;
     position: relative;
     z-index: 1;
+    border-radius: 5px;
+
     /* prevents padding from adding to the width */
     box-sizing: border-box;
     transition: color 0.3s;
@@ -2346,6 +2357,7 @@ body::-webkit-scrollbar {
   }
   #contact-569 .cs-submit:hover:before {
     width: 100%;
+    border-radius: 5px;
   }
   #contact-569 .cs-right {
     width: 100%;
