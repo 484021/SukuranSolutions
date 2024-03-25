@@ -11,6 +11,11 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
     <title>sukuran - Mississauga's Web Designer and Developer</title>
   </head>
   <body>
@@ -48,21 +53,24 @@
                 <a href="#about" class="cs-li-link cs-active"> About </a>
               </li>
               <li class="cs-li">
-                <a href="" class="cs-li-link"> Services</a>
+                <a href="#services" class="cs-li-link"> Services</a>
               </li>
               <li class="cs-li">
-                <a href="" class="cs-li-link"> Services </a>
+                <a href="#projects" class="cs-li-link"> Projects </a>
               </li>
               <li class="cs-li">
-                <a href="" class="cs-li-link"> About Us </a>
+                <a href="#pricing" class="cs-li-link"> Pricing </a>
               </li>
               <li class="cs-li">
-                <a href="" class="cs-li-link"> FAQ </a>
+                <a href="#faq" class="cs-li-link"> FAQ </a>
+              </li>
+              <li class="cs-li">
+                <a href="#testimonials" class="cs-li-link"> Testimonials </a>
               </li>
             </ul>
           </div>
         </nav>
-        <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <a href="#contact" class="cs-button-solid cs-nav-button">Contact Us</a>
         <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
         <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
           <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
@@ -349,7 +357,7 @@
     <!-- ============================================ -->
 
     <section id="services-1354">
-      <div class="cs-container">
+      <div class="cs-container" id="services">
         <div class="cs-content">
           <span class="cs-topper">Our Services</span>
           <h2 class="cs-title">
@@ -483,7 +491,7 @@
     <!-- ============================================ -->
 
     <section id="gallery-46">
-      <div class="cs-container">
+      <div class="cs-container" id="projects">
         <div class="cs-content">
           <span class="cs-topper">Our Portfolio</span>
           <h2 class="cs-title">
@@ -793,7 +801,7 @@
             </div>
           </div>
         </div>
-        <a href="" class="cs-button-solid">Start Your Project</a>
+        <a href="#contact" class="cs-button-solid">Start Your Project</a>
       </div>
     </section>
     <!-- ============================================ -->
@@ -889,7 +897,7 @@
     <!-- ============================================ -->
 
     <section id="pricing-357">
-      <div class="cs-container">
+      <div class="cs-container" id="pricing">
         <div class="cs-content">
           <span class="cs-topper">Pricing</span>
           <h2 class="cs-title">It’s Easy to Get Started</h2>
@@ -987,7 +995,7 @@
                 Hosting
               </li>
             </ul>
-            <a href="/basic.html" class="cs-button-solid">Get Started</a>
+            <a href="#contact" class="cs-button-solid">Get Started</a>
           </li>
           <!-- Option 2 -->
           <li class="cs-item cs-popular">
@@ -1077,7 +1085,7 @@
                 Revisions
               </li>
             </ul>
-            <a href="/basic.html" class="cs-button-solid">Get Started</a>
+            <a href="#contact" class="cs-button-solid">Get Started</a>
           </li>
           <!-- Option 3 -->
           <li class="cs-item">
@@ -1167,7 +1175,7 @@
                 Revisions
               </li>
             </ul>
-            <a href="/basic.html" class="cs-button-solid">Get Started</a>
+            <a href="#contact" class="cs-button-solid">Get Started</a>
           </li>
         </ul>
       </div>
@@ -1177,7 +1185,7 @@
     <!-- ============================================ -->
 
     <section id="faq-1741">
-      <div class="cs-container">
+      <div class="cs-container" id="faq">
         <div class="cs-content">
           <span class="cs-topper">Frequently Asked Questions</span>
           <h2 class="cs-title">Get All Your Questions Answered Here</h2>
@@ -1379,7 +1387,7 @@
     <!-- ============================================ -->
 
     <section id="reviews-1395">
-      <div class="cs-container">
+      <div class="cs-container" id="testimonials">
         <div class="cs-content">
           <span class="cs-topper">Testimonials</span>
           <h2 class="cs-title">Client’s Feedback About Our Service</h2>
@@ -1461,7 +1469,7 @@
     <!-- ============================================ -->
 
     <section id="contact-569">
-      <div class="cs-container">
+      <div class="cs-container" id="contact">
         <div class="cs-left">
           <div class="cs-content">
             <span class="cs-topper">Contact Us</span>
@@ -1471,67 +1479,69 @@
           <!--Form-->
           <form
             class="cs-form"
-            id="cs-form-569"
+            id="cs-form-569 contact-form"
             name="Contact Form"
             method="post"
           >
-            <label class="cs-label">
+            <label class="cs-label" for="user_name">
               Name
               <input
                 class="cs-input"
                 required
                 type="text"
-                id="name-569"
-                name="name"
-                placeholder="Name"
+                id="user_name"
+                name="user_name"
+                placeholder="Your name..."
               />
             </label>
-            <label class="cs-label">
+            <label class="cs-label" for="user_phone">
               Phone
               <input
                 class="cs-input"
                 required
-                type="text"
-                id="phone-569"
-                name="phone"
-                placeholder="Phone"
+                type="phonenumber"
+                id="user_phone"
+                name="user_phone"
+                placeholder="Your number..."
               />
             </label>
-            <label class="cs-label">
+            <label class="cs-label" for="user_email">
               Email
               <input
                 class="cs-input"
                 required
-                type="text"
-                id="email-569"
-                name="email"
-                placeholder="Email"
+                type="email"
+                id="user_email"
+                name="user_email"
+                placeholder="JohnDoe@gmail.com"
+                required
               />
             </label>
-            <label class="cs-label">
+            <label class="cs-label" for="hear_us">
               How did you hear about us?
               <input
                 class="cs-input"
                 required
                 type="text"
-                id="hear-569"
-                name="heat"
+                id="hear_us"
+                name="hear_us"
                 placeholder="How did you hear about us?"
               />
             </label>
-            <label class="cs-label cs-message">
+            <label class="cs-label cs-message" for="message">
               Message
               <textarea
                 class="cs-input cs-textarea"
                 required
-                name="Message"
-                id="message-569"
+                name="message"
+                id="message"
                 placeholder="Write message..."
                 rows="4"
                 cols="50"
+                required
               ></textarea>
             </label>
-            <button class="cs-submit" type="submit">Send Now</button>
+            <button class="cs-submit submit-btn" type="submit">Send Now</button>
           </form>
         </div>
         <div class="cs-right">
@@ -1745,4 +1755,15 @@
       <div class="cs-floater" aria-hidden="true"></div>
     </footer>
   </body>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "KHugbW9nLiDrCSpXo",
+      });
+    })();
+  </script>
 </html>
