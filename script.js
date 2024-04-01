@@ -62,8 +62,8 @@ contactForm.addEventListener("submit", (e) => {
   submitButton.innerText = "Just a moment...";
 
   const inputFields = {
-    name: nameInput.value,
-    email: emailInput.value,
+    from_name: nameInput.value,
+    email_id: emailInput.value,
     message: messageInput.value,
   };
   emailjs.send(serviceId, templateId, inputFields).then(
@@ -80,16 +80,16 @@ contactForm.addEventListener("submit", (e) => {
   );
 });
 
-let templateParams = {
-  name: "James",
-  notes: "Check this out!",
-};
+// let templateParams = {
+//   name: "James",
+//   notes: "Check this out!",
+// };
 
-emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams).then(
-  (response) => {
-    console.log("SUCCESS!", response.status, response.text);
-  },
-  (error) => {
-    console.log("FAILED...", error);
-  }
-);
+// emailjs.send("service_29xnzve", "template_2z1h1ll", templateParams).then(
+//   (response) => {
+//     console.log("SUCCESS!", response.status, response.text);
+//   },
+//   (error) => {
+//     console.log("FAILED...", error);
+//   }
+// );

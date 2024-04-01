@@ -96,7 +96,9 @@
             together for your business!
           </p>
           <div class="cs-button-group">
-            <a href="" class="cs-button-solid cs-button1">Get Started!</a>
+            <a href="#contact" class="cs-button-solid cs-button1"
+              >Get Started!</a
+            >
           </div>
         </div>
       </div>
@@ -1479,9 +1481,10 @@
           <!--Form-->
           <form
             class="cs-form"
-            id="cs-form-569 contact-form"
+            id="contact-form"
             name="Contact Form"
             method="post"
+            type="submit"
           >
             <label class="cs-label" for="user_name">
               Name
@@ -1494,7 +1497,7 @@
                 placeholder="Your name..."
               />
             </label>
-            <label class="cs-label" for="user_phone">
+            <!-- <label class="cs-label" for="user_phone">
               Phone
               <input
                 class="cs-input"
@@ -1504,7 +1507,7 @@
                 name="user_phone"
                 placeholder="Your number..."
               />
-            </label>
+            </label> -->
             <label class="cs-label" for="user_email">
               Email
               <input
@@ -1517,7 +1520,7 @@
                 required
               />
             </label>
-            <label class="cs-label" for="hear_us">
+            <!-- <label class="cs-label" for="hear_us">
               How did you hear about us?
               <input
                 class="cs-input"
@@ -1527,7 +1530,7 @@
                 name="hear_us"
                 placeholder="How did you hear about us?"
               />
-            </label>
+            </label> -->
             <label class="cs-label cs-message" for="message">
               Message
               <textarea
@@ -1759,11 +1762,4 @@
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
   ></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init({
-        publicKey: "KHugbW9nLiDrCSpXo",
-      });
-    })();
-  </script>
 </html>
