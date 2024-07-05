@@ -68,7 +68,7 @@ contactForm.addEventListener("submit", (e) => {
   };
   emailjs.send(serviceId, templateId, inputFields).then(
     () => {
-      submitButton.innerText = "Message sent successfully";
+      submitButton.innerText = "Sucess!";
 
       nameInput.value = "";
       emailInput.value = "";
